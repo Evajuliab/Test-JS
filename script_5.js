@@ -47,7 +47,7 @@ function rentedLess() {
         rents.push(book.rented);
     });
 
-    var minValue = Math.min.apply(Math, rents);
+    var minValue = Math.min.apply(Math, rents); //fonction trouvée sur internet
     books.forEach((book) => {
 		if (book.rented == minValue) {
 			console.log(`le moins emprunté : ${book.title}`);
@@ -67,6 +67,23 @@ function find(id) {
     }
 
 find (873495)
+
+
+function suppr() {
+    
+        delete books[0] // supprime le livre en position 0
+       
+        console.log(books);  
+}
+
+
+    
+suppr()
+
+
+
+
+
 
 function sort() {
 

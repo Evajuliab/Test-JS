@@ -22,10 +22,11 @@ const entrepreneurs = [
 
 
   function year() {
-
-	entrepreneurs.forEach((entre) => {
-		if (entre.year >= 1970 && entre.year < 1980) {
-			console.log(`${entre.first} ${entre.last}`);
+  
+console.log("ceux nés dans les annnées 70:")
+	entrepreneurs.forEach((age) => {
+		if (age.year >= 1970 && age.year < 1980) {
+			console.log(`${age.first} ${age.last}, né(e) en ${age.year}`);
 		}
 	});
 }
@@ -34,6 +35,7 @@ year();
 
 function nom() {
 
+    console.log("Leurs noms prénoms:")
     var names = [];
 	entrepreneurs.forEach((name) => {
 		names.push((name.first + " " + name.last));
@@ -58,6 +60,7 @@ age();
 
 function sort() {
 
+    console.log("par ordre alphabétique")
     var array = [];
 	entrepreneurs.forEach((name) => {
 		array.push(name.last);
