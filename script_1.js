@@ -1,4 +1,5 @@
 console.log(`Bonjour monde`)
+
 let name = "";
 name = prompt("Quel est ton prénom ?");
 

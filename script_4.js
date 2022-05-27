@@ -35,8 +35,8 @@ year();
 
 function nom() {
 
-    console.log("Leurs noms prénoms:")
-    var names = [];
+    console.log("Leurs noms & prénoms:")
+    const names = [];
 	entrepreneurs.forEach((name) => {
 		names.push((name.first + " " + name.last));
 
@@ -61,7 +61,7 @@ age();
 function sort() {
 
     console.log("par ordre alphabétique")
-    var array = [];
+    const array = [];
 	entrepreneurs.forEach((name) => {
 		array.push(name.last);
 	});

@@ -24,13 +24,13 @@ const books = [
 
 
   function rentedMost () {
-    var rents = []
+    const rents = []
 
     books.forEach((book) => {
         rents.push(book.rented);
     });
 
-    var maxValue = Math.max.apply(Math, rents);
+    var maxValue = Math.max.apply(Math, rents);//fonction trouvée sur internet
     books.forEach((book) => {
 		if (book.rented == maxValue) {
 			console.log(`le plus emprunté est : ${book.title}`);
@@ -42,7 +42,7 @@ const books = [
 rentedMost ()
 
 function rentedLess() {
-    var rents = []
+    const rents = []
     books.forEach((book) => {
         rents.push(book.rented);
     });
@@ -60,8 +60,8 @@ rentedLess ()
 function find(id) {
     
         books.forEach((book) => {
-            if (book.id == id) {
-                console.log(`le livre avec l'id ${id} est : ${book.title}`);
+            if (book.id === id) {
+                console.log(`le livre avec l'id ${id} est ${book.title}`);
             }
         });
     }
@@ -75,19 +75,14 @@ function suppr() {
        
         console.log(books);  
 }
-
-
-    
 suppr()
-
-
 
 
 
 
 function sort() {
 
-    var arr = [];
+    const arr = [];
 	books.forEach((name) => {
 		arr.push(name.title);
 	});
