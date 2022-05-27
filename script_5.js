@@ -15,8 +15,8 @@ const books = [
 
   function rented () {
 
-      books.forEach((name) => {
-      if (name.rented > 0);
+      books.forEach((num) => {
+      if (num.rented > 0);
           console.log ("oui tous les livres été ont été empruntés au moins 1 fois");
     })    
   };
